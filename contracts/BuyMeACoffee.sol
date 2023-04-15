@@ -25,8 +25,6 @@ contract BuyMeACoffee {
     Memo[] memos;
 
     constructor() {
-        // Store the address of the deployer as a payable address.
-        // When we withdraw funds, we'll withdraw here.
         owner = payable(msg.sender);
     }
 
