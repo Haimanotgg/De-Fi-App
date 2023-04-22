@@ -43,6 +43,30 @@ async function main() {
   console.log("== start ==");
   await printBalances(addresses);
 
+  
+// 
+}
+
+// // We recommend this pattern to be able to use async/await everywhere
+// // and properly handle errors.
+main()
+  .then(() => process.exit(0))
+  .catch((error) => {
+    console.error(error);
+    process.exit(1);
+  });
+
+
+
+
+
+
+
+
+
+
+
+
   // Buy the owner a few coffees.
   // const tip = {value: hre.ethers.utils.parseEther("1")};
   // await buyMeACoffee.connect(tipper).buyCoffee("Carolina", "You're the best!", tip);
@@ -64,14 +88,3 @@ async function main() {
 //   console.log("== memos ==");
 //   const memos = await buyMeACoffee.getMemos();
 //   printMemos(memos);
-// 
-}
-
-// // We recommend this pattern to be able to use async/await everywhere
-// // and properly handle errors.
-main()
-  .then(() => process.exit(0))
-  .catch((error) => {
-    console.error(error);
-    process.exit(1);
-  });
