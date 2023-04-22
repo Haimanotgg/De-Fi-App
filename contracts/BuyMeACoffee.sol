@@ -58,6 +58,7 @@ contract BuyMeACoffee {
 
     
     function withdrawTips() public {
+        // address(this).balance
         require(owner.send(address(this).balance));
     }
 }
