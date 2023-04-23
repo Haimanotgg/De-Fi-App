@@ -2,7 +2,7 @@ require("@nomiclabs/hardhat-waffle");
 require("@nomiclabs/hardhat-ethers");
 require("dotenv").config();
 
-const GOERLI_URL = process.env.GOERLI_URL;
+const SEPOLIA_URL = process.env.SEPOLIA_URL;
 const PRIVATE_KEY = process.env.PRIVATE_KEY;
 
 /** @type import('hardhat/config').HardhatUserConfig */
